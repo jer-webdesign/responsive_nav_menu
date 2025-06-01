@@ -51,6 +51,8 @@ export default function NewBooks() {
 
       <section className="book-carousel" ref={ref}>
         {bookList.map((book) => {
+          console.log(book); // Debug each book
+
           const cover = `/assets/images/book-covers/${book.filename}`;
 
           return (
