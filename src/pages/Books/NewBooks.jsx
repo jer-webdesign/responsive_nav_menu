@@ -51,9 +51,9 @@ export default function NewBooks() {
 
       <section className="book-carousel" ref={ref}>
         {bookList.map((book) => {
-          
+          console.log(book.filename); // Debug each book
           const cover = `/assets/images/book-covers/${book.filename}`;
-          console.log(cover); // Debug each book
+          
           return (
             <article key={book.bookID} className="book">
               <figure onClick={() => handleBookClick(book.bookID)} style={{ cursor: "pointer" }}>
