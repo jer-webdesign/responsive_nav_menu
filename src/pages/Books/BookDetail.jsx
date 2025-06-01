@@ -9,7 +9,8 @@ export default function BookDetail() {
   const book = books.find((b) => String(b.bookID) === bookID);
 
   if (!book) return <p>Book not found</p>;
-
+  
+  console.log(book); // Debug each book
   const cover = `/assets/images/book-covers/${book.filename}`;
 
   return (
