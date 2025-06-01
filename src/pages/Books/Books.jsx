@@ -27,7 +27,7 @@ export default function Books() {
       <div className="books-container">
         {books.map((book) => {
           console.log(book.filename); // Debug each book
-          const cover = `${import.meta.env.BASE_URL}assets/images/book-covers/${book.filename}`;
+          const cover = `/assets/images/book-covers/${book.filename}`;
           
           return (
             <div key={book.bookID} className="book-card">
