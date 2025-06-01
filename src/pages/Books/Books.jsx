@@ -26,8 +26,8 @@ export default function Books() {
       <h2>All Books</h2>
       <div className="books-container">
         {books.map((book) => {
-          console.log(book); // Debug each book
           const cover = `/assets/images/book-covers/${book.filename}`;
+          console.log(cover); // Debug each book
           return (
             <div key={book.bookID} className="book-card">
               <img
