@@ -10,7 +10,7 @@ export default function BookDetail() {
 
   if (!book) return <p>Book not found</p>;
 
-  const cover = new URL(`/assets/images/book-covers/${book.filename}`, import.meta.url).href;
+  const cover = new URL(`../../assets/images/book-covers/${book.filename}`, import.meta.url).href;
 
   return (
     <div className="book-detail-container">
