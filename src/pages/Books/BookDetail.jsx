@@ -11,7 +11,7 @@ export default function BookDetail() {
   if (!book) return <p>Book not found</p>;
   
   console.log(book.filename); // Debug each book
-  const cover = `${import.meta.env.BASE_URL}assets/images/book-covers/${book.filename}`;
+  const cover = `/assets/images/book-covers/${book.filename}`;
   
   return (
     <div className="book-detail-container">
