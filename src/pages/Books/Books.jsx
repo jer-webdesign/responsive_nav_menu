@@ -1,7 +1,7 @@
 // src/pages/Books/Books.jsx
 import { useNavigate } from "react-router-dom";
 import books from "../../data/visbook.json";
-import "./Books.css"; // optional styling
+import "./Books.css";
 
 export default function Books() {
   const navigate = useNavigate();
@@ -26,9 +26,7 @@ export default function Books() {
       <h2>All Books</h2>
       <div className="books-container">
         {books.map((book) => {
-          console.log(book.filename); // Debug each book
-          const cover = `/assets/images/book-covers/${book.filename}`;
-          
+          const cover = `/assets/images/book-covers/${book.filename}`;          
           return (
             <div key={book.bookID} className="book-card">
               <img
