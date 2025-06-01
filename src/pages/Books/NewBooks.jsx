@@ -51,7 +51,7 @@ export default function NewBooks() {
 
       <section className="book-carousel" ref={ref}>
         {bookList.map((book) => {
-          const cover = new URL(`/assets/images/book-covers/${book.filename}`, import.meta.url).href;
+          const cover = `/assets/images/book-covers/${book.filename}`;
 
           return (
             <article key={book.bookID} className="book">
