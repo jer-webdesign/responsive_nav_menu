@@ -26,7 +26,7 @@ export default function Books() {
       <h2>All Books</h2>
       <div className="books-container">
         {books.map((book) => {
-          const cover = new URL(`../../assets/images/book-covers/${book.filename}`, import.meta.url).href;
+          const cover = new URL(`/assets/images/book-covers/${book.filename}`, import.meta.url).href;
           return (
             <div key={book.bookID} className="book-card">
               <img
