@@ -2,7 +2,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import books from "../../data/visbook.json";
-import "./BookDetail.css"; // Optional styling
+import "./BookDetail.css";
 
 export default function BookDetail() {
   const { bookID } = useParams();
