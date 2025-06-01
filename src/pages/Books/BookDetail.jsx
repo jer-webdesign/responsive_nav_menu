@@ -10,9 +10,9 @@ export default function BookDetail() {
 
   if (!book) return <p>Book not found</p>;
   
-  console.log(book); // Debug each book
+  
   const cover = `/assets/images/book-covers/${book.filename}`;
-
+  console.log(cover); // Debug each book
   return (
     <div className="book-detail-container">
       <div className="book-detail">
