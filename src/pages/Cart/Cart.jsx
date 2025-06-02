@@ -26,7 +26,7 @@ export default function Cart() {
       ) : (
         <ul className="cart-items">
           {cartItems.map((item, index) => {
-            const cover = `/assets/images/book-covers/${item.filename}`;
+            const cover = `${import.meta.env.BASE_URL}assets/images/book-covers/${item.filename}`;
             return (
               <li key={index} className="cart-item">
                 <img src={cover} alt={`Cover of ${item.title}`} width="120" height="auto" />
