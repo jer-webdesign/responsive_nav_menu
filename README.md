@@ -76,9 +76,11 @@ import { HashRouter as Router } from 'react-router-dom';
 
 #### Why use HashRouter?
 
-GitHub Pages serves static files and does not support server-side routing, which causes `BrowserRouter` to fail with 404 errors on page reloads or direct URL access.
+GitHub Pages serves static files and does not support server-side routing, which causes `BrowserRouter`
+to fail with 404 errors on page reloads or direct URL access.
 
-`HashRouter` uses the URL hash (`#`) portion to simulate routing entirely on the client side, preventing 404 errors by keeping the URL path consistent from the server's perspective.
+`HashRouter` uses the URL hash (`#`) portion to simulate routing entirely on the client side,
+preventing 404 errors by keeping the URL path consistent from the server's perspective.
 
 ---
 
@@ -122,15 +124,19 @@ GitHub Pages serves static files and does not support server-side routing, which
 
 - W3Schools. (n.d.). HTML Web Storage - localStorage. https://www.w3schools.com/html/html5_webstorage.asp
 
-- LogRocket. (2025, May 28). How to deploy React apps to GitHub Pages. LogRocket Blog. https://blog.logrocket.com/gh-pages-react-apps/
+- LogRocket. (2025, May 28). How to deploy React apps to GitHub Pages.
+  LogRocket Blog. https://blog.logrocket.com/gh-pages-react-apps/
 
 - React. (n.d.). useRef – React documentation. https://react.dev/reference/react/useRef
 
-- React Router. (n.d.). useNavigate – React Router documentation. https://reactrouter.com/api/hooks/useNavigate
+- React Router. (n.d.). useNavigate – React Router documentation.
+  https://reactrouter.com/api/hooks/useNavigate
 
-- React Router. (n.d.). HashRouter – React Router documentation. https://reactrouter.com/en/main/router-components/hash-router
+- React Router. (n.d.). HashRouter – React Router documentation.
+  https://reactrouter.com/en/main/router-components/hash-router
 
-- Stack Overflow. (n.d.). Why does React Router give a 404 error on GitHub Pages? https://stackoverflow.com/questions/49346783/react-router-on-github-pages-giving-404-error
+- Stack Overflow. (n.d.). Why does React Router give a 404 error on GitHub Pages?
+  https://stackoverflow.com/questions/49346783/react-router-on-github-pages-giving-404-error
 
 - 3DTotal Store. (n.d.). 3DTotal Store. https://store.3dtotal.com/
 
