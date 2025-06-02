@@ -57,7 +57,9 @@ To deploy the site to GitHub Pages, follow these steps:
      "predeploy": "npm run build",
      "deploy": "gh-pages -d dist"
    }
+   "homepage": "https://github.com/[GitHub username]/[repository name]"
    ```
+   
 
 3. Run the deployment command:
 
