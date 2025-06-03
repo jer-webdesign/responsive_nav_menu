@@ -1,4 +1,5 @@
 Assignment #1: Responsive Navigation Menu
+
 Overview
 This project is a responsive navigation menu built with Vite + React. It features a hamburger menu for mobile viewports, animated transitions that hover and highlight the buttons, and client-side routing using React Router.
 
