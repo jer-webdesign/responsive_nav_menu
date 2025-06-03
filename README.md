@@ -1,76 +1,59 @@
-
-# Responsive Navigation Menu
-
-## Overview
-
+Assignment #1: Responsive Navigation Menu
+Overview
 This project is a responsive navigation menu built with Vite + React. It features a hamburger menu for mobile viewports, animated transitions that hover and highlight the buttons, and client-side routing using React Router.
 
-This is a Visual Graphic online bookstore website named visbook.
+This is a Visual Graphic online bookstore website named VISBOOK.
 
-## Features
-
-- Responsive navigation bar
-- Hamburger menu for small screens
-- Smooth CSS animations for menu transitions
-- React Router for client-side navigation
-- JSON-based product data loading for book covers and information (book titles, subtitles, authors, prices, etc.)
-- Book covers scrollable using navigation buttons
-- Images are stored inside the `public` folder, not inside `src`, to simplify asset management and referencing in production builds.
-
-## Setup Instructions
-
+Features
+Responsive navigation bar
+Hamburger menu for small screens
+Smooth CSS animations for menu transitions
+React Router for client-side navigation
+JSON-based product data loading for book covers and information (book titles, subtitles, authors, prices, etc.)
+Book covers scrollable using navigation buttons
+Images are stored inside the public folder, not inside src, to simplify asset management and referencing in production builds.
+Setup Instructions
 Before you begin, make sure you have Node.js installed on your machine.
 
 Set up the project using Vite and install React along with React Router DOM.
 
-1. Clone the repository
+Clone the repository
 
-2. Navigate into the project directory and run:
+Navigate into the project directory and run:
 
-   npm create vite@latest
+npm create vite@latest
 
-   Select the React template.
+Select the React template.
 
-3. Install dependencies:
+Install dependencies:
 
-   npm install react-router-dom
-   npm install
- 
-4. Start the development server with:
+npm install react-router-dom npm install
 
-   npm run dev
+Start the development server with:
 
+npm run dev
 
-### Deploy to GitHub Pages
-
+Deploy to GitHub Pages
 To deploy the site to GitHub Pages, follow these steps:
 
-1. Install the `gh-pages` package:
+Install the gh-pages package:
 
-   npm install gh-pages --save-dev
+npm install gh-pages --save-dev
 
+Add the following scripts to your package.json:
 
-2. Add the following scripts to your `package.json`:
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+"homepage": "https://github.com/[GitHub username]/[repository name]"
+Run the deployment command:
 
-   ```json
-   "scripts": {
-     "predeploy": "npm run build",
-     "deploy": "gh-pages -d dist"
-   }
-   "homepage": "https://github.com/[GitHub username]/[repository name]"
-   ```
-   
+npm run deploy
 
-3. Run the deployment command:
+Important for GitHub Pages Routing
+If running on GitHub Pages, replace BrowserRouter with HashRouter in your React Router setup:
 
-   npm run deploy
-
-
-### Important for GitHub Pages Routing
-
-If running on GitHub Pages, **replace** `BrowserRouter` with `HashRouter` in your React Router setup:
-
-```js
 import { HashRouter as Router } from 'react-router-dom';
 
 
@@ -94,14 +77,14 @@ preventing 404 errors by keeping the URL path consistent from the server's persp
 - Sign Up
 - Cart
 
-## Technologies Used
+ Technologies Used
 
 - Vite
 - React
 - React Router DOM
 - CSS3
 
-## Key Concepts and Hooks Used
+ Key Concepts and Hooks Used
 
 - `useState` and `useEffect` from React
 - `useRef` and `useNavigate` for scrolling book covers horizontally (left and right)
@@ -109,7 +92,7 @@ preventing 404 errors by keeping the URL path consistent from the server's persp
 - `JSON.parse()` for parsing external JSON files
 - HashRouter as Router
 
-## Accessibility Considerations
+Accessibility Considerations
 
 - Clear focus states
 - Keyboard navigation for menu
@@ -120,7 +103,7 @@ preventing 404 errors by keeping the URL path consistent from the server's persp
 - 3DTotal Store (https://store.3dtotal.com/)
 - Indigo (https://www.indigo.ca/en-ca/)
 
-## Attributions & References
+ Attributions & References
 
 - W3Schools. (n.d.). HTML Web Storage - localStorage. https://www.w3schools.com/html/html5_webstorage.asp
 
