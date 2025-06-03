@@ -64,7 +64,7 @@ Why use HashRouter?
 GitHub Pages serves static files and does not support server-side routing, which causes `BrowserRouter`
 to fail with 404 errors on page reloads or direct URL access.
 
-`HashRouter` uses the URL hash (`#`) portion to simulate routing entirely on the client side,
+HashRouter uses the URL hash (`#`) portion to simulate routing entirely on the client side,
 preventing 404 errors by keeping the URL path consistent from the server's perspective.
 
 
@@ -86,10 +86,10 @@ Pages
 
 6) Key Concepts and Hooks Used
 
-- `useState` and `useEffect` from React
-- `useRef` and `useNavigate` for scrolling book covers horizontally (left and right)
-- `localStorage.getItem()` for retrieving persisted data
-- `JSON.parse()` for parsing external JSON files
+- useState and useEffect from React
+- useRef` and `useNavigate for scrolling book covers horizontally (left and right)
+- localStorage.getItem() for retrieving persisted data
+- JSON.parse() for parsing external JSON files
 - HashRouter as Router
 
 7) Accessibility Considerations
