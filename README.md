@@ -4,7 +4,7 @@ This project is a responsive navigation menu built with Vite + React. It feature
 
 This is a Visual Graphic online bookstore website named VISBOOK.
 
-Features
+1) Features
 Responsive navigation bar
 Hamburger menu for small screens
 Smooth CSS animations for menu transitions
@@ -12,7 +12,7 @@ React Router for client-side navigation
 JSON-based product data loading for book covers and information (book titles, subtitles, authors, prices, etc.)
 Book covers scrollable using navigation buttons
 Images are stored inside the public folder, not inside src, to simplify asset management and referencing in production builds.
-Setup Instructions
+2) Setup Instructions
 Before you begin, make sure you have Node.js installed on your machine.
 
 Set up the project using Vite and install React along with React Router DOM.
@@ -33,7 +33,7 @@ Start the development server with:
 
 npm run dev
 
-Deploy to GitHub Pages
+3) Deploy to GitHub Pages
 To deploy the site to GitHub Pages, follow these steps:
 
 Install the gh-pages package:
@@ -51,13 +51,13 @@ Run the deployment command:
 
 npm run deploy
 
-Important for GitHub Pages Routing
+4) Important for GitHub Pages Routing
 If running on GitHub Pages, replace BrowserRouter with HashRouter in your React Router setup:
 
 import { HashRouter as Router } from 'react-router-dom';
 
 
-#### Why use HashRouter?
+Why use HashRouter?
 
 GitHub Pages serves static files and does not support server-side routing, which causes `BrowserRouter`
 to fail with 404 errors on page reloads or direct URL access.
@@ -65,10 +65,8 @@ to fail with 404 errors on page reloads or direct URL access.
 `HashRouter` uses the URL hash (`#`) portion to simulate routing entirely on the client side,
 preventing 404 errors by keeping the URL path consistent from the server's perspective.
 
----
 
-## Pages
-
+Pages
 - Home
 - About
 - Contact
@@ -77,14 +75,14 @@ preventing 404 errors by keeping the URL path consistent from the server's persp
 - Sign Up
 - Cart
 
- Technologies Used
+ 5) Technologies Used
 
 - Vite
 - React
 - React Router DOM
 - CSS3
 
- Key Concepts and Hooks Used
+6) Key Concepts and Hooks Used
 
 - `useState` and `useEffect` from React
 - `useRef` and `useNavigate` for scrolling book covers horizontally (left and right)
@@ -92,13 +90,13 @@ preventing 404 errors by keeping the URL path consistent from the server's persp
 - `JSON.parse()` for parsing external JSON files
 - HashRouter as Router
 
-Accessibility Considerations
+7) Accessibility Considerations
 
 - Clear focus states
 - Keyboard navigation for menu
 - Responsive layout across devices
 
-## Design Inspiration
+8) Design Inspiration
 
 - 3DTotal Store (https://store.3dtotal.com/)
 - Indigo (https://www.indigo.ca/en-ca/)
